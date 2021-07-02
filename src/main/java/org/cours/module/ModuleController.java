@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cours;
+package org.cours.module;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,11 +27,11 @@ public class ModuleController {
     @RequestMapping("/modules")
     public List<Module> getModules(){
         
-        return moduleService.getModules();
+        return moduleService.getAllModules();
     
     }
     @RequestMapping("/modules/{id}")
-    public Module getModule(@PathVariable Integer id){
+    public Optional <Module> getModule(@PathVariable Integer id){
         return moduleService.getModule(id);
     }
     

@@ -3,15 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cours;
+package org.cours.module;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
  * @author rachid dev
  */
+@Entity
 public class Module {
  
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nom;
     private String description;
