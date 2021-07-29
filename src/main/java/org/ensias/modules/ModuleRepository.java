@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cours.module;
+package org.ensias.modules;
 
+import org.ensias.modules.Module;
 import org.springframework.data.repository.CrudRepository;
 
 /**

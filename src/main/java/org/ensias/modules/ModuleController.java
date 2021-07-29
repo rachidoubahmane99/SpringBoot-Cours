@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cours.module;
+package org.ensias.modules;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import org.ensias.modules.Module;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
